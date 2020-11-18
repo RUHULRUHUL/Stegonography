@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/navigationbackground"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="20"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/nav_header_main">
+
+        </include>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/side_home"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="20"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawableTint="#9E9A9A"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/StegoFun"
+            android:textSize="25sp"
+            android:textColor="@color/nav_side_textcolor"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="@color/colorbody"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/side_dashboard"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="20"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawableTint="#9E9A9A"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/CryptoFun"
+            android:textColor="@color/nav_side_textcolor"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorbody"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="20"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawableTint="#9E9A9A"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/Info"
+            android:textColor="@color/nav_side_textcolor"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="@color/colorbody"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/side_orders"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="20"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawableTint="#9E9A9A"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/FAQ"
+            android:textColor="@color/nav_side_textcolor"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

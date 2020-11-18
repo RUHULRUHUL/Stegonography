@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Stegonography</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    //custome dialog text
+    <string name="Encryption_Complete">Encryption Complete</string>
+
+    //decription page one text
+    <string name="Decrypt">Decrypt</string>
+    <string name="Cover_Image">Cover Image</string>
+    <string name="Stego_Image">Stego Image</string>
+    <string name="MSE">MSE</string>
+    <string name="PSNR">PSNR</string>
+    <string name="Enter_Cipher_Text">Enter Your Cipher Text</string>
+    //encryption page one text
+
+    <string name="Choose_image">Choose an image</string>
+    <string name="Enter_Message">Enter Your Message</string>
+    <string name="Key">Key</string>
+    <string name="Encrypt">Encrypt</string>
+
+    //encryption page two
+    <string name="encrypt_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra quam netus dapibus viverra sodales turpis. A semper ac nunc vestibulum morbi. Sit sed blandit pharetra tempus massa nec amet tristique. Est facilisis eu interdum a ultricies. Risus at egestas lobortis.</string>
+
+
+    //app drawer navigation side bar menu string text_________________
+    <string name="StegoFun">StegoFun</string>
+    <string name="CryptoFun">CryptoFun</string>
+    <string name="Info">Info</string>
+    <string name="FAQ">FAQ</string>
+
+    //info activity String text______________________
+    <string name="Features">Features</string>
+    <string name="Features_bodytext">User can secure there data, download and share it in various way.</string>
+    <string name="Version">Version</string>
+    <string name="xxxxxxxx">xxxxxxxx</string>
+    <string name="Release_Date">Release Date</string>
+    <string name="Release_date_time">23 October 2020</string>
+    <string name="Terms_Condition">Terms and Condition</string>
+    <string name="Terms_Condition_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan, tortor blandit tellus, vivamus suscipit habitant ac. Orci viverra massa ut eu tempor fermentum quis. Nulla dignissim lectus vulputate.</string>
+    <string name="Privacy_policy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan, tortor blandit tellus, vivamus suscipit habitant ac. Orci viverra massa ut eu tempor fermentum quis. Nulla dignissim lectus vulputate.</string>
+    <string name="Licence_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan, tortor blandit tellus, vivamus suscipit habitant ac. Orci viverra massa ut eu tempor fermentum quis. Nulla dignissim lectus vulputate.</string>
+    <string name="Privacy_policy">Privacy policy</string>
+    <string name="Licence">Licence</string>
+
+    //faq actiity text_____________________________
+
+    <string name="What_Is_Stegonography">What Is Stegonography ?</string>
+    <string name="Stegonography_details">Steganography is the technique of hiding secret data within an ordinary, non-secret, file, or message to avoid detection; the secret data is then extracted at its destination. </string>
+    <string name="What_Is_Cryptography">What Is Cryptography ?</string>
+    <string name="Cryptography_details">Cryptography provides for secure communication in the presence of malicious third-parties—known as adversaries. Encryption uses an algorithm and a key to transform an input into an encrypted output. A given algorithm will always transform the same plaintext into the same ciphertext if the same key is used.</string>
+    <string name="Threads">Threads that it can prevent ?</string>
+    <string name="Threads_details">This system can prevent Ciphertext Only Attack (COA), Known Plaintext Attack (KPA), Chosen Plaintext Attack (CPA), Dictionary Attack, Brute Force Attack (BFA), Birthday Attack, Man in Middle Attack (MIM), Side Channel Attack (SCA), Timing Attacks, Power Analysis Attacks, Fault Analysis Attacks</string>
+</resources>

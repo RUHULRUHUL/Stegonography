@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stegonography">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".C_Encription_result"></activity>
+        <activity android:name=".C_Decription_page_two" />
+        <activity android:name=".C_Decription_page_one" />
+        <activity android:name=".C_Decription_result" />
+        <activity android:name=".C_Encription_page_two" />
+        <activity android:name=".C_Encription_page_one" />
+        <activity android:name=".Cryptomenu_Activity" />
+        <activity android:name=".Deference" />
+        <activity android:name=".Decreption_Result" />
+        <activity android:name=".Decreption_page_two" />
+        <activity android:name=".Decreption_page_one" />
+        <activity android:name=".Encryption_Result" />
+        <activity android:name=".Encription_page_two" />
+        <activity android:name=".Encryption_page_one" />
+        <activity android:name=".Stego_menu" />
+        <activity android:name=".Appdrawer" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Faq" />
+        <activity android:name=".Info" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
