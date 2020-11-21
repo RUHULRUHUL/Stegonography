@@ -25,7 +25,7 @@
     <string name="Enter_Cipher_Text">Enter Your Cipher Text</string>
     //encryption page one text
 
-    <string name="Choose_image">Choose an image</string>
+    <string name="Choose_image">Chose an image</string>
     <string name="Enter_Message">Enter Your Message</string>
     <string name="Key">Key</string>
     <string name="Encrypt">Encrypt</string>
@@ -62,4 +62,6 @@
     <string name="Cryptography_details">Cryptography provides for secure communication in the presence of malicious third-parties—known as adversaries. Encryption uses an algorithm and a key to transform an input into an encrypted output. A given algorithm will always transform the same plaintext into the same ciphertext if the same key is used.</string>
     <string name="Threads">Threads that it can prevent ?</string>
     <string name="Threads_details">This system can prevent Ciphertext Only Attack (COA), Known Plaintext Attack (KPA), Chosen Plaintext Attack (CPA), Dictionary Attack, Brute Force Attack (BFA), Birthday Attack, Man in Middle Attack (MIM), Side Channel Attack (SCA), Timing Attacks, Power Analysis Attacks, Fault Analysis Attacks</string>
+
+    <string name="share_subject">"It is a Encription and Decription android app"</string>
 </resources>

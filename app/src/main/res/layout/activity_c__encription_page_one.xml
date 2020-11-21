@@ -5,25 +5,25 @@
     android:layout_width="match_parent"
     android:background="@color/colorbody"
     android:layout_height="match_parent"
-    tools:context=".C_Encription_page_one">
+    tools:context=".cryptofun.C_Encription_page_one">
 
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="332dp"
         android:layout_height="176dp"
-        android:layout_marginBottom="408dp"
+        android:layout_marginTop="92dp"
         android:background="@drawable/inputshape"
-        android:text="@string/Enter_Message"
-        android:textAlignment="center"
+        android:hint="Enter your messege"
+        android:textColorHint="@color/textcolor"
+        android:textAlignment="textStart"
+        android:paddingLeft="15dp"
         android:textColor="@color/textcolor"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.113">
+        app:layout_constraintTop_toTopOf="parent">
 
     </EditText>
 
@@ -39,17 +39,22 @@
         app:layout_constraintVertical_bias="0.119"
         tools:layout_editor_absoluteX="0dp">
 
-        <Button
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:layout_width="0dp"
-            android:text="@string/Key"
-            android:textColor="@color/whitecolor"
-            android:textSize="25sp"
-            android:layout_height="match_parent">
+      <EditText
+          android:id="@+id/inputkeyid"
+          android:layout_weight="1"
+          android:background="@drawable/buttonshape"
+          android:layout_width="0dp"
+          android:hint="@string/Key"
+          android:textColorHint="@color/whitecolor"
+          android:inputType="textPassword"
+          android:textColor="@color/whitecolor"
+          android:textAlignment="center"
+          android:textSize="20sp"
+          android:layout_height="match_parent">
 
-        </Button>
+      </EditText>
         <Button
+            android:id="@+id/encriptid"
             android:layout_marginLeft="30dp"
             android:layout_weight="1"
             android:background="@drawable/buttonshape"
@@ -64,9 +69,10 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/homeid"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="50dp"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

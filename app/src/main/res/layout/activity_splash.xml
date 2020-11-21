@@ -6,7 +6,7 @@
     android:id="@+id/splas_layout_id"
     android:background="@color/colorbody"
     android:layout_height="match_parent"
-    tools:context=".Splash">
+    tools:context=".splash.Splash">
 
 
     <ImageView

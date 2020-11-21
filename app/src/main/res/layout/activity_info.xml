@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/constrint_layout_id"
     android:background="@color/colorbody"
-    tools:context=".Info">
+    tools:context=".sidemenubar.Info">
 
     <androidx.cardview.widget.CardView
         android:layout_width="356dp"
@@ -61,7 +61,7 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/Features_bodytext"
                     android:textColor="@color/textcolor"
-                    android:textSize="10sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -167,7 +167,7 @@
                     android:layout_margin="10dp"
                     android:text="@string/Terms_Condition_text"
                     android:textColor="@color/textcolor"
-                    android:textSize="10sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.384"
@@ -200,7 +200,7 @@
                     android:layout_margin="10dp"
                     android:text="@string/Privacy_policy_text"
                     android:textColor="@color/textcolor"
-                    android:textSize="10sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -230,7 +230,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="14dp"
                     android:text="@string/Licence_text"
                     android:textColor="@color/textcolor"
                     android:textSize="10sp"

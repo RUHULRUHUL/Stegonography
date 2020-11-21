@@ -13,17 +13,14 @@
         android:id="@+id/nav_drawer_icon"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="360dp"
-        android:layout_marginRight="360dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
         android:src="@drawable/drawerimageicon"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/cryptoFunId"
+        android:id="@+id/stegofun_id"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="50dp"
@@ -40,8 +37,6 @@
         android:background="@drawable/cryptofun"
         android:paddingBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cryptoFunId"
-        app:layout_constraintStart_toStartOf="@+id/cryptoFunId"
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
 

@@ -1,104 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/colorbody"
     android:layout_height="match_parent"
-    tools:context=".Decreption_page_one">
+    tools:context=".stegofun.Decreption_page_one">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/chosebuttonid"
+        android:layout_width="328dp"
+        android:layout_height="72dp"
         android:layout_marginTop="100dp"
-        android:layout_height="match_parent">
-        <Button
-            android:id="@+id/button"
-            android:layout_width="328dp"
-            android:layout_height="72dp"
-            android:layout_marginBottom="524dp"
-            android:background="@drawable/shapbutton"
-            android:drawableLeft="@drawable/plus"
-            android:paddingLeft="20dp"
-            android:text="@string/Choose_image"
-            android:textAllCaps="false"
-            android:textColor="@color/nav_side_textcolor"
+        android:background="@drawable/shapbutton"
+        android:drawableLeft="@drawable/plus"
+        android:paddingLeft="30dp"
+        android:text="@string/Choose_image"
+        android:textAllCaps="false"
 
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent">
+        android:textColor="@color/nav_side_textcolor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        </Button>
+    </Button>
+
+    <ImageView
+        android:id="@+id/imageviewid"
+        android:layout_width="343dp"
+        android:layout_height="144dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chosebuttonid">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="35dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageviewid">
 
         <EditText
-            android:id="@+id/editText"
-            android:layout_width="332dp"
-            android:layout_height="176dp"
-            android:background="@drawable/inputshape"
-            android:text="@string/Enter_Message"
+            android:id="@+id/inputkeyid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:hint="@string/Key"
+            android:inputType="textPassword"
             android:textAlignment="center"
-            android:textColor="@color/textcolor"
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
-            app:layout_constraintVertical_bias="0.113">
+            android:textColor="@color/whitecolor"
+            android:textColorHint="@color/whitecolor">
 
         </EditText>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_margin="35dp"
+        <Button
+            android:id="@+id/decryptid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:text="@string/Decrypt"
+            android:textColor="@color/whitecolor"
+            android:textSize="25sp">
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText"
-            app:layout_constraintVertical_bias="0.119"
-            tools:layout_editor_absoluteX="0dp">
+        </Button>
 
-            <Button
-                android:layout_weight="1"
-                android:background="@drawable/buttonshape"
-                android:layout_width="0dp"
-                android:text="@string/Key"
-                android:textColor="@color/whitecolor"
-                android:textSize="25sp"
-                android:layout_height="match_parent">
+    </LinearLayout>
 
-            </Button>
-            <Button
-                android:layout_marginLeft="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/buttonshape"
-                android:layout_width="0dp"
-                android:text="@string/Decrypt"
-                android:textColor="@color/whitecolor"
-                android:textSize="25sp"
-                android:layout_height="match_parent">
+    <ImageView
+        android:id="@id/homeid"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
 
-            </Button>
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/home"
-            android:layout_marginBottom="52dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent">
-
-        </ImageView>
+    </ImageView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
-</androidx.core.widget.NestedScrollView>

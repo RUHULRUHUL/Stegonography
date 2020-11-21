@@ -1,83 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/colorbody"
     android:layout_height="match_parent"
-    tools:context=".Encryption_Result">
+    tools:context=".stegofun.Encryption_Result">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="492dp"
-            android:layout_height="360dp"
-            android:layout_marginBottom="288dp"
-            android:src="@drawable/inc_result"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent">
+    <TextView
+        android:id="@+id/timecalculate_id"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="52dp"
+        android:text="004sec"
+        android:textColor="@color/whitecolor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        </ImageView>
+    </TextView>
 
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_margin="15dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:layout_constraintVertical_bias="0.075"
-            tools:layout_editor_absoluteX="16dp">
+    <ImageView
+        android:id="@+id/imageview_id"
+        android:layout_width="352dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timecalculate_id">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/share">
+    </ImageView>
 
-            </ImageView>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/setting">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/download">
-
-            </ImageView>
-
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="356dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_id">
 
         <ImageView
-            android:layout_width="60dp"
+            android:id="@+id/shareid"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="52dp"
-            android:src="@drawable/home"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_weight="1"
+            android:src="@drawable/share">
 
         </ImageView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@drawable/setting">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/download_id"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/download">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/homeid"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
 
 
-</androidx.core.widget.NestedScrollView>
+
+

@@ -1,14 +1,17 @@
-package com.example.stegonography;
+package com.example.stegonography.sidemenubar;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Decreption_Result extends AppCompatActivity {
+import com.example.stegonography.R;
+
+public class Info extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_decreption__result);
+        setContentView(R.layout.activity_info);
+
     }
 }

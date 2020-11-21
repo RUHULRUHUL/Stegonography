@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/constrint_layout_id"
     android:background="@color/colorbody"
-    tools:context=".Faq">
+    tools:context=".sidemenubar.Faq">
 
     <androidx.cardview.widget.CardView
         android:layout_width="358dp"

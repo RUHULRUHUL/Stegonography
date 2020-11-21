@@ -1,8 +1,10 @@
-package com.example.stegonography;
+package com.example.stegonography.sidemenubar;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.stegonography.R;
 
 public class Faq extends AppCompatActivity {
 

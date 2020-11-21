@@ -5,46 +5,50 @@
     android:layout_width="match_parent"
     android:background="@color/colorbody"
     android:layout_height="match_parent"
-    tools:context=".C_Decription_result">
+    tools:context=".cryptofun.C_Decription_result">
 
 
     <TextView
+        android:id="@+id/timeid"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
         android:text="004sec"
-        android:textSize="18sp"
         android:textColor="@color/whitecolor"
-        android:layout_marginBottom="568dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
-
 
     <LinearLayout
         android:id="@+id/line1"
         android:layout_width="347dp"
         android:layout_height="138dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/inputshape"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/encrypt_text"
-            android:textColor="@color/textcolor">
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/decriptiontextid"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:textAlignment="textStart"
+              android:paddingLeft="10dp"
+              android:text="@string/encrypt_text"
+              android:textColor="@color/textcolor">
 
-        </TextView>
+          </TextView>
+      </androidx.core.widget.NestedScrollView>
 
 
     </LinearLayout>
@@ -53,17 +57,16 @@
         android:id="@+id/linearLayout3"
         android:layout_width="356dp"
         android:layout_height="109dp"
+        android:layout_marginBottom="80dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/homeid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
+            android:id="@+id/share_id"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -72,6 +75,7 @@
         </ImageView>
 
         <ImageView
+            android:visibility="invisible"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -80,6 +84,7 @@
         </ImageView>
 
         <ImageView
+            android:id="@+id/downloadid"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -91,10 +96,10 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/homeid"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="56dp"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
